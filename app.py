@@ -21,12 +21,12 @@ selected_features = ['year', 'hp', 'cylinders', 'doors', 'highway_mpg', 'city_mp
 subset_data = cars_data[selected_features]
 data_make = pd.read_csv('df_cat_make_value.csv')
 
-@app.route('/')
+@application.route('/')
 def home():
     # Get unique 'make' values from the cars_data DataFrame
     unique_makes = cars_data['make'].unique()
     return render_template('index.html', unique_makes=unique_makes)
-@app.route('/predict', methods=['POST'])
+@application.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
         try:
