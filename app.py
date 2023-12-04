@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 from plotly.subplots import make_subplots
 import seaborn as sns
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 # Load the RandomForestRegressor model
 with open('model_random_forest.pkl', 'rb') as file:
@@ -113,4 +113,4 @@ def plot():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
