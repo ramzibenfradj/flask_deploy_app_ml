@@ -68,7 +68,7 @@ def predict():
 
 
 
-@app.route('/plot')
+@application.route('/plot')
 def plot():
     def generate_plot_div():
         # Generate Plotly figures
