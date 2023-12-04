@@ -111,4 +111,4 @@ def plot():
 
     return render_template('dashboard.html', div_fig1=div_fig1, div_fig2=div_fig2, div_fig3=div_fig3, img_base64=img_base64)
 
-application = app
+app = app
